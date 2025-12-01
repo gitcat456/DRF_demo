@@ -10,10 +10,10 @@ class AuthorSerializer(serializers.ModelSerializer):
 
 class BlogPostSerializer(serializers.ModelSerializer):
     class Meta: 
-        model = Author
+        model = BlogPost
         fields = '__all__'
         
-class CommentSerializer(serializers.ModelSerialiizer):
-    class Mets:
-        model = Author
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
         fields = '__all__'
